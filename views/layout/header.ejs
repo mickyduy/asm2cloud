@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.datatables.net/v/bs4/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+    <title><%= title %></title>
+    <style>
+        /* CSS cho thanh header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Căn phần tử sang bên phải */
+        }
+    
+        .menu-item {
+            margin-left: 10px; /* Đổi margin-right thành margin-left để căn phải */
+        }
+    
+        .menu-item:first-child {
+            margin-left: 0;
+        }
+    
+        .menu-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        /* CSS cho form */
+    .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .table {
+        width: 100%;
+    }
+    
+    .table th {
+        font-weight: bold;
+    }
+    
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+    }
+    
+    .table-dark th {
+        color: #fff;
+        background-color: #333;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="https://cdn.freebiesupply.com/logos/large/2x/atn-2-logo-png-transparent.png" alt="" style="width: 150px; height: 50px;"></a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="/" class="menu-link"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="/add" class="menu-link"><i class="fas fa-user"></i> Add product</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+        </ul>
+    </header>
